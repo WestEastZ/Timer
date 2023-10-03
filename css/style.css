@@ -1,0 +1,144 @@
+body {
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+
+  background: var(
+    --gradient2,
+    radial-gradient(293.21% 130.49% at 3.59% 5.28%, #f0f4ff 0%, #a5b6ee 100%)
+  );
+}
+
+/* clock */
+.clock {
+  width: 400px;
+  height: 360px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 16px;
+  background: var(
+    --gradient,
+    linear-gradient(144deg, #5572bb 2.13%, #374b7c 102.97%)
+  );
+  box-shadow: 20px 20px 60px 10px rgba(55, 75, 124, 0.4);
+}
+
+/* header */
+.clock-title {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.clock-title::after {
+  content: "";
+  display: block;
+
+  width: 312px;
+  height: 1px;
+
+  margin-top: 23px;
+
+  border-bottom: 1px solid #5b75b4;
+  background: #3d538a;
+}
+
+/* timer */
+.clock-timer {
+  margin-top: 33px;
+  margin-bottom: 40px;
+
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.timer-title {
+  color: var(--light, #a5b6ee);
+  text-align: center;
+
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.clock-timer div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.dot {
+  transform: translateY(10%);
+}
+
+.clock-number {
+  color: #fff;
+  text-align: center;
+
+  font-family: Pretendard;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+/* button */
+.clock-btn {
+  display: flex;
+  gap: 12px;
+}
+
+.clock-btn button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+
+  cursor: pointer;
+  width: 112px;
+  height: 48px;
+
+  color: white;
+
+  border: none;
+  border-radius: 50px;
+}
+
+.btn-start {
+  background: #5180ff;
+}
+
+.btn-reset {
+  background-color: #fb7099;
+}
+
+.btn-pause {
+  background-color: #15c2b8;
+}
+
+.clock-btn .disable {
+  color: #617199;
+  background-color: #324577;
+}
+
+footer {
+  color: #8596bf;
+  text-align: center;
+
+  font-size: 14px;
+  font-weight: 400;
+}

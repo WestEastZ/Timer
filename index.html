@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1>
+        <img class="header-weniv" src="./img/Group.svg" alt="위니브" />
+      </h1>
+    </header>
+
+    <main class="main">
+      <article class="clock">
+        <section class="clock-header">
+          <h2 class="clock-title">TIMER</h2>
+        </section>
+
+        <section class="clock-timer">
+          <div class="timer-box-hour">
+            <p class="timer-title">HRS</p>
+            <input class="clock-number HRS" type="number" value="00" />
+          </div>
+
+          <img class="dot" src="./img/dot.svg" alt="" />
+
+          <div class="timer-box-min">
+            <p class="timer-title">MIN</p>
+            <div>
+              <input class="clock-number MIN" type="number" value="00" />
+            </div>
+          </div>
+
+          <img class="dot" src="./img/dot.svg" alt="" />
+
+          <div class="timer-box-sec">
+            <p class="timer-title">SEC</p>
+            <input class="clock-number SEC" type="number" value="00" />
+          </div>
+        </section>
+
+        <section class="clock-btn">
+          <button class="btn-start disable">
+            <img src="./img/icon-start.svg" alt="" />
+            <span>START</span>
+          </button>
+          <button class="btn-pause disable" style="display: none">
+            <img src="./img/icon-stop.svg" alt="" />
+            <span>PAUSE</span>
+          </button>
+          <button class="btn-reset disable">
+            <img src="./img/icon-reset.svg" alt="" />
+            <span>RESET</span>
+          </button>
+        </section>
+      </article>
+    </main>
+    <footer>ⓒ WENIV Corp.</footer>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
